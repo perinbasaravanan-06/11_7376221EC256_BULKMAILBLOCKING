@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+:root
+{
+  --b-background-color:  #343232;
+  --box-background-color: hsl(0, 0%, 0%);
+  --text-color: #ffffff;
+  --text-hover: hsl(0, 0%, 0%);
+  --buttonbackground-color: hsl(0, 0%, 0%);
+  --button-shadow:2px 2px 20px rgb(206, 206, 206);
+  --buttonbackground-hover-color:#ffffff;
+  --buttonbackground-hover-shadow-color : 5px 5px 30px rgb(188, 181, 181);
+  --box-shadow : 5px 5px 15px hwb(0 60% 39% / 0.774);
+  --toggle-bg : #314a88;
+  --toggle-fg : #00a6ff;
+}
+
+[data-theme = "light"]
+{
+  --b-background-color: hsl(0, 4%, 85%);
+  --box-background-color: hsl(0, 0%, 100%);
+  --text-color: #000000;
+  --text-hover: hsl(0, 0%, 100%);
+  --buttonbackground-color:#ffffff;
+  --button-shadow:2px 2px 20px rgb(82, 82, 82);
+  --buttonbackground-hover-color:hsl(0, 0%, 100%);
+  --buttonbackground-hover-shadow-color : 5px 5px 30px rgb(54, 52, 52);
+  --box-shadow :  5px 5px 20px hwb(0 14% 86% / 0.774);
+  --toggle-bg : #f0eb9d;
+  --toggle-fg : #ffd000;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--body-background-color);  
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}

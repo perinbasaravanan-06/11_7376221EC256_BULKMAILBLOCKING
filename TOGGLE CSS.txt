@@ -1,0 +1,64 @@
+.toggle-container
+{
+    position: absolute;
+    top: -0.2em;
+    right: 0.1em;
+}
+.toggle
+{
+    visibility: hidden;
+}
+.toggle + label
+{
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    
+}
+.toggle + label::before
+{
+    content: "";
+    height: 0.9em;
+    width: 1.7em;
+    border-radius: 1em;
+    border: 1px solid #00a6ff;
+    background-color: #314a88;;
+    margin-right:0.5em;
+    transition: background-color 250ms ease-in-out;
+}
+
+.toggle + label::after
+{
+    content: "";
+    height: 0.7em;
+    width: 0.7em;
+    border-radius:1em;
+    background-color: #00a6ff;
+    position: absolute;
+    left: 0.2em;
+    transition: background-color 250ms ease-in-out;
+}
+.toggle:checked +label::after
+{
+    transform: translateX(96%);
+    background-color: #ffd000;
+    border: 1px solid #f0eb9d;
+    transition: background-color 250ms ease-in-out;
+
+}
+.toggle:checked +label::before
+{
+    background-color: #f0eb9d;
+    border: 1px solid #ffd000;
+   transition: background-color 250ms ease-in-out;
+}
+.Imgaes
+{
+    height: 20px;
+    width: 20px;
+    display: inline;
+    flex-direction: row;
+
+
+}
